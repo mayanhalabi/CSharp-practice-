@@ -1,33 +1,33 @@
-﻿// mymethod();
+﻿Babydog babydog = new Babydog();
+babydog.crying();
+babydog.brak();
+babydog.eat();
 
-// static void mymethod()
-// {
-//     Console.WriteLine("hello function");
-// }
+// Dog dog = new Dog();
+// dog.eat();
+// dog.brak();
 
-// mymethod1("Mayan", 18);
-// mymethod1("sara ", 20);
-// mymethod1("talia", 12);
 
-// static void mymethod1(string fname, int age)
-// {
-//     Console.WriteLine(fname + "is" + age);
-// }
 
-int firstNo, secoundNo;
-
-Console.WriteLine("please enter the first number:");
-firstNo = Convert.ToInt32(Console.ReadLine());
-
-Console.WriteLine("please enter the secound number:");
-secoundNo = Convert.ToInt32(Console.ReadLine());
-
-Console.WriteLine("the result of sum two values is : " + AddTwoValues( firstNo , secoundNo));
-
-static int AddTwoValues(int a , int y)
+public class Animal
 {
-return a+y;
+    public void eat()
+    {
+        Console.WriteLine("eating...");
+    }
+}
+public class Dog : Animal
+{
+    public void brak()
+    {
+        Console.WriteLine("braking ...");
+    }
+}
+public class Babydog : Dog 
 
-} 
-
-
+{
+    public void crying()
+    {
+        Console.WriteLine("crying ...");
+    }
+}
