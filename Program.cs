@@ -1,17 +1,31 @@
-﻿int no1, no2, resultAdd=0, resultMulti=1;
+﻿// int x, y;
+// int max = 0;
+// Console.WriteLine("enter the first number:");
+// x= Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("enter the first number:");
+// y= Convert.ToInt32(Console.ReadLine());
 
-Console.Write("please enter the first number:");
-no1 = Convert.ToInt32(Console.ReadLine());
+// if (x>y) max = x;
+// else if(x<y) max = y;
+// else Console.WriteLine("x = y ");
+// Console.WriteLine(max);
 
+//factorial 
+// int i ,fact =1, number;
+// Console.WriteLine("enter number:");
+// number = Convert.ToInt32(Console.ReadLine());
+// for(i=1; i<= number;i++)
+// fact = fact * i;
+// Console.WriteLine(fact);
 
-Console.Write("please enter the secound number:");
-no2 = Convert.ToInt32(Console.ReadLine());
+//power 
+int i, power =1, baseNo, expoNo;
+Console.WriteLine("enter the base no:");
+baseNo= Convert.ToInt32(Console.ReadLine());
 
-resultAdd = no1 + no2;
-resultMulti = no1 * no2;
+Console.WriteLine("enter expo no:");
+expoNo= Convert.ToInt32(Console.ReadLine());
 
-//Console.WriteLine("The result of adding operation is: ",resultAdd );
-//Console.WriteLine("The result of multi operation is: ",resultMulti );
-Console.WriteLine(resultAdd);
-Console.WriteLine(resultMulti);
-
+for(i=1;i<=expoNo;i++)
+power *= baseNo;
+Console.WriteLine(power);
