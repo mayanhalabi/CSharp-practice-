@@ -1,45 +1,33 @@
-﻿// // find max 
-// int[] arr = [1,7,-2,5,-1,9];
-// int maxNo = arr[0];
+﻿// mymethod();
 
-// for (int i =0; i<arr.Length; i++)
-// if(maxNo > arr[i])
-// maxNo = arr[i];
-// Console.WriteLine(maxNo);
+// static void mymethod()
+// {
+//     Console.WriteLine("hello function");
+// }
 
-// assing and desassinding 
-// int i,j,temp,no;
-// int[] arr1= new int [5];
-// Console.WriteLine("please enter no of elements of arryes");
-// no = Convert.ToInt32(Console.ReadLine());
+// mymethod1("Mayan", 18);
+// mymethod1("sara ", 20);
+// mymethod1("talia", 12);
 
-// Console.WriteLine("please enter the values:");
-// for(i=0; i<no; i++)
-// arr1[i]= Convert.ToInt32(Console.ReadLine());
+// static void mymethod1(string fname, int age)
+// {
+//     Console.WriteLine(fname + "is" + age);
+// }
 
-// for(i=0; i<no; i++)
-// for(j=i+1; j<no; j++)
-// if(arr1[i] > arr1[j])
-//         {
-//             temp = arr1[i];
-//             arr1[i] = arr1[j];
-//             arr1[j] = temp;
-//         }
-//         Console.WriteLine(" the final result is:");
-//         for(i=0; i<no; i++)
-//     Console.Write($"{arr1[i]}");
+int firstNo, secoundNo;
 
-// odd and even 
-using System.Diagnostics.CodeAnalysis;
+Console.WriteLine("please enter the first number:");
+firstNo = Convert.ToInt32(Console.ReadLine());
 
-int[] arr = [1,2,5,8,13,21,34];
-int sum =0;
+Console.WriteLine("please enter the secound number:");
+secoundNo = Convert.ToInt32(Console.ReadLine());
 
-for( int i =0; i<arr.Length; i++)
-if(arr[i]%2 == 1)
-sum += arr[i];
+Console.WriteLine("the result of sum two values is : " + AddTwoValues( firstNo , secoundNo));
 
-Console.WriteLine(sum);
+static int AddTwoValues(int a , int y)
+{
+return a+y;
 
+} 
 
 
